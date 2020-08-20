@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+  box-sizing:border-box;
+}
+body{
+  font-family:'Roboto',sans-serif;
+  margin :50px 0 0;
+  line-height:1.5;
+}
+nav{
+  background-color:#FFDB15;
+  box-shadow:0 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  padding:15px;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;  
+}
+.nav-link{
+  color:black;
+  text-decoration:none;
+  margin: 0 15px;
+}
+img {
+  max-width:100%;
+  
+}
+.container{
+  max-width:700px;
+  display:flex;
+  flex-wrap:wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+.header-left{
+  padding-left:20px;
+  width:60%;
+  text-align: justify;
+}
+.header-right{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:40%;
+  
+}
+.feature{
+  background-color: #FFD015;
+  border-radius:10px;
+  box-shadow:2px 2px 20px rgba(0,0,0,0.1);
+  margin: 0 1.66%;
+  width:30%;
+  text-align: center;
+  padding:10px;
+}
+.feature h2{
+  font-size: 20px;
+  margin-top: 5px;
+}
+.feature p{
+  font-size: 12px;
+  line-height: 20px;
+}
+.feature i{
+  margin-top:20px;
+  font-size: 30px;
+}
+section h2{
+  text-align: center;
+  margin-top: 40px;
+}
+section{
+  margin-bottom:20px;
+}
+footer{
+  background-color:black;
+  color:#FFDB15;
+  text-align: right;
+  padding:10px;
+}
+footer .fa-heart{
+  color:red;
+}
+.feature ul li{
+  text-align: left;
+  line-height:2;
+}
+.bg-yellow{
+  background-color:yellow ;
+}
+.btn{
+  background-color: #FFDB15;
+  border-radius:5px;
+  border:0;
+  box-shadow:2px 2px 2px #8a7480;
+  color:black;
+  display:inline-block;
+  padding:10px 25px;
+  text-decoration: none;
+  position: relative;
+  transition:all 0.1s ease;
+  font-size:16px;
+  font-family: inherit;
+}
+form{
+  margin-bottom:40px ;
+}
+form input[type="email"]{
+  border-radius:5px;
+  border:0;
+  color:black;
+  display:inline-block;
+  font-size:16px;
+  padding:10px 25px;
+  width:100%;
+  flex: 1;
+  margin-right: 10px;
+}
+.btn-ghost{
+  box-shadow:none;
+  border:none;
+  background-color: green;
+}
+.btn-ghost:active{
+  transform:none;
+}
+form .flex{
+  display:flex;
+  flex-wrap:wrap;
+}
+@media (max-width : 480px){
+  .header-left, .header-right{
+    width:100%;
+  }
+  .header-right{
+    order:0;
+  }
+  .header-left{
+    order:1;
+    padding-right:0;
+  }
+  .header-left h1{
+    display:none;
+  }
+  .feture{
+    margin:10px 0;
+    width:100%;
+  }
+  .flex input,.flex .btn-ghost{
+    margin:5px 10px;
+    width:100%;
+  }
+}
+iframe{
+  max-width:90%;
+  margin-bottom: 30px;
+}
